@@ -42,6 +42,7 @@ footer {
   padding: 20px;
   width: 100%;
   font-size: 14px;
+  z-index: 201;
 }
 
 .logo {

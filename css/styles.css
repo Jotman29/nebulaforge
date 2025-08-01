@@ -1,43 +1,78 @@
-/* Footer and Navbar for all pages */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #000000;
+  --link-hover-color: #0ee8487e;
+  --header-bg: #ffffff;
+  --footer-bg: #eeeeee;
+}
+
+html.dark-mode {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --link-color: #ffffff;
+  --link-hover-color: #0ee8487e;
+  --header-bg: #000000;
+  --footer-bg: #121212;
+}
+
 html, body {
   margin: 0;
-  padding: 0; 
-  height: 100%; 
-  background-color: #000000;
+  padding: 0;
+  height: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--header-bg);
+  color: var(--text-color);
   position: fixed;
   z-index: 100;
+  top: 0;
+  left: 0;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   box-sizing: border-box;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
 .nav-links a {
-  color: white;
+  color: var(--link-color);
   text-decoration: none;
   margin-left: 30px;
+  font-size: 0.95rem;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #0ee8487e;
+  color: var(--link-hover-color);
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #121212;
-  color: white;
+  background-color: var(--footer-bg);
+  color: var(--text-color);
   text-align: center;
   padding: 20px;
   width: 100%;
@@ -45,8 +80,26 @@ footer {
   z-index: 201;
 }
 
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
+.nav-links button {
+  all: unset;
+  background: transparent;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-links button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border-color: var(--text-color);
+  box-shadow: 0 0 8px var(--text-color);
+}
+
+.nav-links button:active {
+  transform: scale(0.95);
 }

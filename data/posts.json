@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Part One: Light and Dark Mode",
+    "content": "I added a button to switch between light and dark mode. When you click it, the colors of the website change. It also remembers your choice, so if you refresh or come back later, it stays the same."
+  },
+  {
+    "title": "Part Two: Blog Posts with JavaScript",
+    "content": "I made a file with blog post info and used JavaScript to load it. Now the blog posts show up on the page automatically. This way, I don’t have to write each one in the HTML."
+  }
+]

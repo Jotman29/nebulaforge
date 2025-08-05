@@ -12,6 +12,24 @@
       background-color: var(--bg-color);
       color: var(--text-color);
     }
+    .blog-post {
+    border: 1px solid var(--text-color);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+  }
+
+  .blog-post h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+
+  .blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
   </style>
 </head>
 <body>
@@ -30,15 +48,15 @@
     </nav>
   </header>
 
-  <main style="padding: 100px 20px 60px; text-align: center;">
-    <h1>Latest News Coming Soon</h1>
-    <p>Stay tuned for updates from Nebula Forge Studios.</p>
-  </main>
+  <main style="padding: 100px 20px 60px;">
+  <h1 style="text-align: center;">Latest News</h1>
+  <div id="blog-list"></div>
+</main>
 
   <footer>
     <p>&copy; 2025 Nebula Forge Studios. All rights reserved.</p>
   </footer>
-
-  <script src="theme.js"></script>
+ <script src="js/scripts.js"></script>
+ <script src="js/theme.js"></script>
 </body>
 </html>
